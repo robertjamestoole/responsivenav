@@ -1,0 +1,82 @@
+:root {
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+  /* Random Color Palette */
+  --main-color: #197391;
+  --second-color: #775ada;
+  --third-color: #002651;
+  --fourth-color: #ff304f;
+}
+
+body {
+  margin: 0;
+  height: 1000px;
+  background-image: linear-gradient(
+    to bottom,
+    #23addb,
+    #22a7d3,
+    #21a1cc,
+    #209bc4,
+    #1f95bd,
+    #1e90b7,
+    #1e8bb0,
+    #1d86aa,
+    #1c81a4,
+    #1b7c9d,
+    #1a7897,
+    #197391
+  );
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: end;
+  /* background-color: #fff; */
+  margin: 0;
+}
+
+.nav-bar {
+  width: 50%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-listitem {
+  display: inline;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.nav-link {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  /* color: var(--main-color); */
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: var(--second-color);
+  font-weight: 900;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .nav-listitem {
+    display: block;
+    width: 100%;
+    background: var(--third-color);
+    text-align: center;
+  }
+  .nav-list {
+    display: block;
+  }
+}

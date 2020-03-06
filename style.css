@@ -64,19 +64,23 @@ body {
 
 @media screen and (max-width: 600px) {
   .nav-wrapper {
-    display: flex;
-    justify-content: center;
+    display: block;
   }
+
   .navbar {
     width: 100%;
   }
+
   .nav-listitem {
     display: block;
-    width: 100%;
+    width: 100vw;
     background: var(--third-color);
     text-align: center;
   }
+
   .nav-list {
     display: block;
+    margin: 0;
+    padding: 0;
   }
 }
